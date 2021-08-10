@@ -1,0 +1,47 @@
+{
+  "name": "cross-expand",
+  "version": "0.1.0",
+  "description": "",
+  "author": "Salsita Software <jando@salsitasoft.com>",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "types": "lib/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salsita/cross-expand.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salsita/cross-expand/issues"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "glob": "^7.1.7"
+  },
+  "bin": {
+    "cross-expand": "lib/bin.js"
+  },
+  "scripts": {
+    "build": "tsc -b tsconfig.json",
+    "watch": "tsc -b -w tsconfig.json",
+    "prepublishOnly": "tsc -b tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/glob": "^7.1.4",
+    "@types/jest": "^26.0.24",
+    "jest": "^27.0.6",
+    "lerna": "^4.0.0",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "<rootDir>/lib/"
+    ]
+  }
+}
