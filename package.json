@@ -1,7 +1,7 @@
 {
   "name": "cross-expand",
   "version": "0.1.0",
-  "description": "",
+  "description": "Command line tool for cross-platform glob pattern expansion",
   "author": "Salsita Software <jando@salsitasoft.com>",
   "main": "lib/index.js",
   "files": [
